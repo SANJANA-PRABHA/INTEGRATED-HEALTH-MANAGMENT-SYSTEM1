@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Information Page</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/Doctor.css' %}">
+</head>
+<body>
+   <body>
+      <H1> HEALTHCARE APPOINTMENT SYSTEM </H1>
+
+      <div class="header">
+              <nav>
+                  <ul>
+                     <li><a href="{% url 'home' %}">Home</a></li>
+                     <li><a href="{% url 'aboutus' %}">Aboutus</a></li>
+                     <li><a href="{% url 'services' %}">Services</a> </li>
+                     <li><a href="{% url 'contactus' %}">Contactus</a> </li>
+                  </ul>
+              </nav>
+      </div>
+      <!-- <H2> DOCTOR INFORMATION FORM </H2> -->
+       <h4 class="note">Note: "Caution: Accuracy is crucial. Please fill out the form with precision to avoid delays and ensure proper handling of your information."</h4>
+
+   <div class="wrapper">
+    <div class="title">
+        DOCTOR INFORMATION
+      <!-- <h6> Please fill all the information as accurately as possible.
+          The information you provide will assist in formulating a complete health profile.
+          All Answers are confidential.</h6> -->
+    </div>
+    <form action="" method="POST">
+      {% csrf_token %}
+    <div class="form">
+       <div class="inputfield" >
+          <label>Doctor Name</label>
+          <input type="text" name="dname" class="input" required>
+       </div>
+       <div class="inputfield" >
+        <label>Specialization</label>
+        <input type="text" name="specialization" class="input" required>
+     </div>
+       <div class="inputfield" >
+         <label>Gender</label>
+          <input type="text" name="gender" class="input" required>      
+       </div>
+      <div class="inputfield" >
+         <label>Email Address</label>
+         <input type="text" name="email" class="input">
+      </div>
+      <div class="inputfield" >
+         <label>Phone Number</label>
+         <input type="text" name="phonenumber" class="input" maxlength="10" required>
+      </div>
+      <!-- <div class="inputfield" >
+         <label>Image</label>
+         <input type="image" name="image" class="input" required>
+      </div> -->
+      <div class="inputfield">
+        <button class="btn">Submit</button>
+      </div>
+      
+    </div>
+  </form>
+</div>
+
+</body>
+</html>

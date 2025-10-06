@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Page</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/Register.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
+<body>
+    <H1> DOCTOR APPOINTMENT APPLICATION </H1>
+    <div class="outercont">
+        <div class="container">   
+            <h2> REGISTER </h2>
+            <form action="" method="POST">
+                {% csrf_token %}
+            <div class="innerdiv1">
+                <label for="username"> <i class='fas fa-user-alt' style='font-size:20px'></i> &nbsp; Username:
+                    <input type="text" id="username" name="username" required placeholder="username">
+            </label>
+                <label for="email"> <i class="fa fa-envelope" style="font-size:20px"></i> &nbsp; Email:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="email" id="email" name="email" required placeholder="Email" >
+            </label>
+            <label for="number"><i class='fas fa-phone-square-alt' style='font-size:20px'></i> &nbsp; &nbsp;Number: &nbsp;&nbsp; 
+                <input type="text" id="Number" name="number" required placeholder="Number">
+            </label>
+            <label for="password"><i class='fas fa-lock' style='font-size:20px'></i> &nbsp; Password:&nbsp;
+                <input type="password" id="password" name="password" required placeholder="Password">
+            </label>
+                <button type="submit">Submit</button>
+                <p>Already have an account? <a href="{% url 'loginpage' %}">Login here</a>.</p>
+            </form>
+        </div>
+    </div>
+        
+</body>
+</html>

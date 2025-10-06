@@ -1,0 +1,234 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+}
+Body h1{
+    text-align: center;
+    margin-top: 0px;
+    padding: 0px;
+    width: 100%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 50px;
+    background-color: #8fcfff;
+}
+.header{
+    margin-top: -40Px;
+    width: 100%;
+    height: 40px;
+    padding-top: 5px;
+}
+.content{
+    margin: 0px;
+    padding: 0px;
+    height: 680px;
+    background-image: url(DA_4.png);
+    background-position: center;
+    opacity: initial;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+nav {
+    background-color: #464646;
+    margin: 0px;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    /* padding: 10px; */
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+    display: inline-block;
+    margin-right: 30px;
+    color: #ffffff;
+}
+
+nav a {
+    padding: 5px;
+    text-decoration: none;
+    color: #c7c7c7;
+    font-size: 20px;
+}
+.header  ul li a.active,
+.header  ul li a:hover{
+    padding: 5px;
+	background: #8fcfff;
+    color: #fff;
+
+	border-radius: 2px;
+    font-size: 20px;
+    transition: ease-out 0.5s;
+}
+
+.innercontent{
+    height: 50px;
+    display: flex;
+}
+.innercontent a{
+    text-decoration: none;
+}
+
+.innercontent a:hover{
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.content {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+    /* background-color: #f4f4f4; */
+}
+
+.container {
+    background-color:rgb(0, 183, 255);
+    border-radius: 2px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    height: 20px;
+    margin-right: 20px;
+    text-align: center;
+    color: rgb(48, 48, 48);
+    font-weight: 700;
+}
+
+.container:hover{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    color: rgb(255, 255, 255);
+    background-color: #0661f2;
+    transition: 0.5s;
+}
+.des{
+    width: 100%;
+    /* background-image: url(home2bg.jpg); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.innerdes{
+    height: auto;
+    padding: 10px;
+    padding-top: 50px;
+}
+.innerdes p{
+    text-align: justify;
+    font-size: 25px;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+
+}
+
+.innercontent1{
+    height: 50px;
+    display: flex;
+}
+.innercontent1 a{
+    text-decoration: none;
+}
+
+.innercontent1 a:hover{
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.content1 {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.container1 {
+    background-color:rgb(0, 183, 255);
+    border-radius: 2px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    height: 20px;
+    margin-right: 20px;
+    text-align: center;
+    color: rgb(48, 48, 48);
+    font-weight: 700;
+}
+
+.container1:hover{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    color: rgb(255, 255, 255);
+    background-color: #0661f2;
+    transition: 0.5s;
+}
+.text h2{
+    text-align: center;
+}
+.wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+.doctor{
+    padding: 50px;
+    background-color: #8fcfff;
+    width: 80%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sec_content{
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 70%;
+    height: auto;
+    font-size: 24px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+
+}
+.sec_content a{
+text-decoration: none;
+}
+.sec_image{
+    width: 30%;
+    height: 300px;
+    /* background-color: #434343; */
+    background-image: url(DA_5.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.sec_image1{
+    width: 30%;
+    height: 300px;
+    /* background-color: #434343; */
+    background-image: url(DA_1.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.sec_image2{
+    width: 30%;
+    height: 300px;
+    /* background-color: #434343; */
+    background-image: url(DA_6.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/prediction.css' %}">
+</head>
+<body>
+    <header class="header">
+        <a href="" class="logo"><ion-icon name="flash-outline"></ion-icon>Multiple disease predection</a>
+    </header>
+    <section class="home">
+        <div class="content">
+            <h2>Detected : ></h2>
+            <div class="pred">
+                {% if result %}
+                    <h5>{{ result }}</h5>
+                {% endif %}
+            </div>
+        </div>
+        <div class="wrapper-login">
+            <h2>Values</h2>
+            <form action="" method="POST">
+                {% csrf_token %}
+
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="flash-outline"></ion-icon>
+                    </span>
+                    <input type="text" name="Fever" placeholder="yes or no" required>
+                    <label for="">Do you have fever?</label>
+                </div>
+
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="flash-outline"></ion-icon>
+                    </span>
+                    <input type="text" name="Shortness of breath" placeholder="yes or no" required>
+                    <label for="">Do you have shortness of breath?</label>
+                </div>
+
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="flash-outline"></ion-icon>
+                    </span>
+                    <input type="text" name="Cough" placeholder="yes or no" required>
+                    <label for="">Do you have cough?</label>
+                </div>
+
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="flash-outline"></ion-icon>
+                    </span>
+                    <input type="text" name="Chest pain" placeholder="yes or no" required>
+                    <label for="">Do you have chest pain?</label>
+                </div>
+
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="flash-outline"></ion-icon>
+                    </span>
+                    <input type="text" name="Vomitting" placeholder="yes or no" required>
+                    <label for="">Do you have vomitting?</label>
+                </div>
+
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="flash-outline"></ion-icon>
+                    </span>
+                    <input type="text" name="Sweating" placeholder="yes or no" required>
+                    <label for="">Do you have sweating?</label>
+                </div>
+
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="flash-outline"></ion-icon>
+                    </span>
+                    <input type="text" name="Sudden weakness" placeholder="yes or no" required>
+                    <label for="">Do you have sudden weakness?</label>
+                </div>
+
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="flash-outline"></ion-icon>
+                    </span>
+                    <input type="text" name="Numbness" placeholder="yes or no" required>
+                    <label for="">Do you have numbness?</label>
+                </div>
+
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="flash-outline"></ion-icon>
+                    </span>
+                    <input type="text" name="Headache" placeholder="yes or no" required>
+                    <label for="">Do you have headache?</label>
+                </div>
+
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="flash-outline"></ion-icon>
+                    </span>
+                    <input type="text" name="Swelling" placeholder="yes or no" required>
+                    <label for="">Do you have swelling?</label>
+                </div>
+
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="flash-outline"></ion-icon>
+                    </span>
+                    <input type="text" name="Diarrhea" placeholder="yes or no" required>
+                    <label for="">Do you have diarrhea?</label>
+                </div>
+
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="flash-outline"></ion-icon>
+                    </span>
+                    <input type="text" name="Cancer" placeholder="yes or no" required>
+                    <label for="">Do you have cancer?</label>
+                </div>
+
+                <button type="submit" value="prediction" class="btn">Predict</button>
+            </form>
+        </div>
+    </section>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

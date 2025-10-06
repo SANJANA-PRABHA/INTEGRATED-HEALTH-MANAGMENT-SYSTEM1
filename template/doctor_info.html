@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Information Page</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/doctor_info.css' %}">
+</head>
+<body>
+<div class="header">
+    <h1>HEALTHCARE APPOINTMENT SYSTEM</h1>
+    <h2>DOCTOR INFORMATION</h2>
+</div>
+    <div class="wrapper">
+        <div class="form">
+            <hr>
+            <div class="doctorinfo">
+                {% for doctor in doctors %}
+                <!-- <div class="out"></div> -->
+                <div class="innerinfo1">
+                    <br>
+                    <div class="input">
+                        <div class="inputfield">
+                            <label>Doctor Name: {{ doctor.dname }}</label>
+                        </div>
+                        <div class="inputfield">
+                            <label>Specialization: {{ doctor.specialization }}</label>
+                        </div>
+                        <div class="inputfield">
+                            <label>Gender: {{ doctor.gender }}</label>
+                        </div>
+                        <div class="inputfield">
+                            <label>Email: {{ doctor.email }}</label>
+                        </div>
+                        <div class="inputfield">
+                            <label>Phone Number: {{ doctor.phonenumber }}</label>
+                        </div>
+                    </div>
+                    <hr>
+                    <br>
+                </div>
+                <div class="innerinfo2">
+                    <img class="thumbnail" src="{{ doctor.imageURL }}" alt="">
+                </div>
+
+                {% endfor %}
+            </div>
+            <hr>    
+        </div>
+    </div>
+
+</body>
+</html>
+
+           <!-- {% if doctor.dname == 'DR.kiran' %} -->
+             <!-- {% endif %} -->
